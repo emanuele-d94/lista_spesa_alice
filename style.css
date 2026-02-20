@@ -37,7 +37,6 @@ body{
 .contenuto{
     font-size: 16px;
     font-weight: 500;
-    color: #456967;
 }
 
 .area-input{
@@ -52,14 +51,40 @@ body{
     text-align: center;
     border: solid 5px #456967;
     border-radius: 10px;
-
 }
 
 .area-input button{
+    cursor: pointer;
     margin-left: 15px;
     text-align: center;
     border: solid 5px #456967;
     border-radius: 10px;
     color: #456967;
     background-color: #A6F5BF;
+}
+
+.lista-spesa li{
+    cursor: pointer;
+}
+
+.articoloDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.articoloDivText{
+    color: #456967;
+}
+
+.articoloDivButton{
+    cursor: pointer;
+    text-align: center;
+    border: solid 5px darkred;
+    border-radius: 10px;
+    color: darkred;
+    background-color: red;
 }
