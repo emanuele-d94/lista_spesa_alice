@@ -48,7 +48,6 @@ body{
 }
 
 .contenuto{
-    font-size: 16px;
     font-weight: 500;
 }
 
@@ -63,29 +62,23 @@ body{
 }
 
 .area-input input{
-    /* Rimosso margin-left fisso, sostituito con flex per occupare lo spazio */
-    flex: 1;
+    margin-left: 20px;
     min-width: 0; /* evita overflow su mobile */
     text-align: center;
     border: solid 5px #456967;
     border-radius: 10px;
-    /* Aggiunto padding per facilitare il tocco su mobile */
-    padding: 6px;
-    font-size: 16px; /* evita lo zoom automatico su iOS */
-    margin-left: 20px;
+    font-size: 20px; /* evita lo zoom automatico su iOS */
 }
 
 .area-input button{
+    font-size: 20px;
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 15px;
     text-align: center;
     border: solid 5px #456967;
     border-radius: 10px;
     color: #456967;
     background-color: #A6F5BF;
-    /* Aggiunto padding per area di tocco più comoda */
-    padding: 6px 12px;
-    font-size: 16px;
     /* Evita che il bottone si restringa */
     flex-shrink: 0;
 }
@@ -94,7 +87,7 @@ body{
     /* Aggiunto per occupare tutta la larghezza e non uscire dal contenitore */
     width: 100%;
     padding: 0;
-    list-style: none;
+    margin-left: 40px;
 }
 
 .lista-spesa li{
@@ -111,9 +104,8 @@ body{
 }
 
 .articoloDivText{
+    font-size: 20px;
     color: #456967;
-    /* Aggiunto per evitare che testi lunghi rompano il layout */
-    word-break: break-word;
     flex: 1;
 }
 
@@ -124,9 +116,5 @@ body{
     border-radius: 10px;
     color: darkred;
     background-color: red;
-    /* Aggiunto padding per area di tocco più comoda su mobile */
-    padding: 4px 10px;
-    font-size: 14px;
-    /* Evita che il bottone si restringa con testi lunghi */
-    flex-shrink: 0;
+    margin-right: 70px;
 }
